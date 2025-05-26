@@ -1,96 +1,104 @@
+/* style.css */
+
+/* Estilos gerais para o corpo do documento */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
-    padding: 20px;
-    background-color: #f4f4f4;
-    color: #333;
+    padding: 0;
+    line-height: 1.6;
+    color: #333; /* Cor de texto padrão */
+    background-color: #f8f8f8; /* Fundo levemente cinza */
 }
 
+/* Container principal para centralizar o conteúdo */
 .container {
-    max-width: 900px;
-    margin: 20px auto;
-    background: #fff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border: 2px solid #5a8d5f; /* Green border around the main container */
+    max-width: 1200px; /* Largura máxima para o conteúdo */
+    margin: 0 auto; /* Centraliza o container */
+    padding: 20px;
 }
 
+/* Estilos para o cabeçalho */
 header {
+    background-color: #4CAF50; /* Verde vibrante */
+    color: white;
+    padding: 30px;
     text-align: center;
+    border-radius: 15px; /* Cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
     margin-bottom: 30px;
-    border-bottom: 2px solid #a8e6cf; /* Light green border below header */
-    padding-bottom: 20px;
 }
 
 header h1 {
-    color: #5a8d5f; /* Green color for the main title */
-    font-size: 2.2em;
-    margin-bottom: 15px;
+    font-size: 3em; /* Tamanho maior para o título principal */
+    margin-bottom: 10px;
 }
 
-.header-icons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 15px;
+header h2 {
+    font-size: 2em; /* Tamanho para o subtítulo */
+    font-weight: 400;
 }
 
-.header-icons img {
-    width: 60px;
-    height: 60px;
-    border: 2px solid #a8e6cf;
-    border-radius: 50%;
-    background-color: #e6ffe6;
-}
-
+/* Estilos para as seções de conteúdo */
 main {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two columns */
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Layout responsivo em grade */
+    gap: 25px; /* Espaçamento entre as seções */
 }
 
-.card {
-    background: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+section {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px; /* Cantos arredondados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Sombra mais leve */
+    border-bottom: 5px solid #8BC34A; /* Borda inferior verde claro */
+    transition: transform 0.3s ease-in-out; /* Transição para efeito hover */
 }
 
-.card h2 {
-    color: #5a8d5f; /* Green color for card titles */
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    border-bottom: 1px dashed #c0e6c0; /* Dashed green line under card titles */
-    padding-bottom: 5px;
+section:hover {
+    transform: translateY(-5px); /* Efeito de elevação no hover */
 }
 
-.card h3 {
-    color: #72a878; /* Slightly lighter green for sub-titles */
-    font-size: 1.2em;
-    margin-top: 15px;
-    margin-bottom: 5px;
+section h3 {
+    color: #4CAF50; /* Cor verde para os títulos das seções */
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    font-weight: 600;
 }
 
-.card p {
-    font-size: 0.95em;
-    color: #555;
+section ul {
+    list-style: disc; /* Marcadores de lista */
+    padding-left: 25px;
+    margin: 0;
 }
 
+section ul li {
+    margin-bottom: 8px;
+    font-size: 1.1em;
+}
+
+/* Estilos para o rodapé */
 footer {
     text-align: center;
+    padding: 20px;
     margin-top: 30px;
-    padding-top: 20px;
-    border-top: 2px solid #a8e6cf; /* Light green border above footer */
-    color: #777;
+    color: #666;
     font-size: 0.9em;
 }
 
-/* Responsive adjustments */
+/* Estilos para responsividade em telas menores */
 @media (max-width: 768px) {
-    main {
-        grid-template-columns: 1fr; /* Single column on smaller screens */
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header h2 {
+        font-size: 1.5em;
+    }
+
+    section h3 {
+        font-size: 1.5em;
+    }
+
+    section ul li {
+        font-size: 1em;
     }
 }

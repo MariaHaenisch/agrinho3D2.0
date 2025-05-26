@@ -5,54 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Da Terra ao Prato, do Prato à Consciência</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'custom-green': '#4CAF50', // Um tom de verde para combinar com o tema
+                        'custom-light-green': '#8BC34A', // Um verde mais claro
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Importa a fonte Inter do Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+    </style>
 </head>
-<body>
-    <div class="container">
-        <header>
-            <h1>Da terra ao prato do prato à consciência</h1>
-            <div class="header-icons">
-                <img src="https://via.placeholder.com/60x60?text=Planta" alt="Planta">
-                <img src="https://via.placeholder.com/60x60?text=Cesta" alt="Cesta de alimentos">
-                <img src="https://via.placeholder.com/60x60?text=Talheres" alt="Talheres">
-                <img src="https://via.placeholder.com/60x60?text=Casa" alt="Casa">
-                <img src="https://via.placeholder.com/60x60?text=Prédios" alt="Prédios">
-            </div>
+<body class="font-inter bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+    <div class="container mx-auto p-4 md:p-8 flex-grow">
+        <header class="text-center mb-8 bg-custom-green text-white p-6 rounded-xl shadow-lg">
+            <h1 class="text-3xl md:text-5xl font-bold mb-2">Da Terra ao Prato</h1>
+            <h2 class="text-2xl md:text-4xl font-semibold">do Prato à Consciência</h2>
+            <img src="https://placehold.co/600x150/4CAF50/FFFFFF?text=Consciência+Alimentar" alt="Consciência Alimentar" class="mx-auto mt-4 rounded-lg shadow-md">
         </header>
 
-        <main>
-            <section class="card">
-                <h2>Sabores com propósito</h2>
-                <h3>Da horta à cozinha</h3>
-                <p>Receitas saudáveis com ingredientes locais e sazonais.</p>
-                <h3>Agricultura consciente</h3>
-                <p>Histórias de quem cultiva, respeitando a terra e a natureza.</p>
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <section class="bg-white p-6 rounded-xl shadow-md border-b-4 border-custom-light-green">
+                <h3 class="text-2xl font-bold text-custom-green mb-3">Sabores com Propósito</h3>
+                <ul class="list-disc pl-5 space-y-2 text-lg">
+                    <li>Receitas saudáveis com ingredientes locais.</li>
+                    <li>Da horta à cozinha.</li>
+                </ul>
             </section>
 
-            <section class="card">
-                <h2>Consciência em cada mordida!</h2>
-                <h3>Oficinas e palestras</h3>
-                <p>Alimentação saudável, compostagem e aproveitamento integral dos alimentos.</p>
-                <h3>Cultura do alimento</h3>
-                <p>Tradições culinárias e saberes populares que conectam.</p>
+            <section class="bg-white p-6 rounded-xl shadow-md border-b-4 border-custom-light-green">
+                <h3 class="text-2xl font-bold text-custom-green mb-3">Consciência em Cada Mordida</h3>
+                <ul class="list-disc pl-5 space-y-2 text-lg">
+                    <li>Oficinas e palestras: alimentação saudável, compostagem e aproveitamento integral dos alimentos.</li>
+                    <li>Cultura de alimento: tradições culinárias e saberes populares que conectam.</li>
+                </ul>
             </section>
 
-            <section class="card">
-                <h2>Valorizando o local</h2>
-                <h3>Feiras e produtores</h3>
-                <p>Conheça quem planta, colhe e entrega comida de verdade.</p>
-                <h3>Economia solidária</h3>
-                <p>Iniciativas que fortalecem comunidades e reduzem impactos ambientais.</p>
+            <section class="bg-white p-6 rounded-xl shadow-md border-b-4 border-custom-light-green">
+                <h3 class="text-2xl font-bold text-custom-green mb-3">Valorizando o Local</h3>
+                <ul class="list-disc pl-5 space-y-2 text-lg">
+                    <li>Feiras e produtores: conheça quem planta, colhe e entrega comida de verdade.</li>
+                    <li>Economia solidária: iniciativas que fortalecem comunidades e reduzem impactos ambientais.</li>
+                </ul>
             </section>
 
-            <section class="card">
-                <h2>Conexão Sustentável</h2>
-                <h3>Eventos culturais</h3>
-                <p>Música, arte e rodas de conversa sobre consumo consciente.</p>
+            <section class="bg-white p-6 rounded-xl shadow-md border-b-4 border-custom-light-green">
+                <h3 class="text-2xl font-bold text-custom-green mb-3">Conexão Sustentável</h3>
+                <ul class="list-disc pl-5 space-y-2 text-lg">
+                    <li>Eventos Culturais: música, arte e rodas de conversa sobre consumo consciente.</li>
+                </ul>
             </section>
         </main>
 
-        <footer>
-            <p>Maria Eduarda Cordeiro Haenisch 8º2 3ºB</p>
+        <footer class="text-center mt-8 p-4 text-gray-600">
+            <p class="text-sm md:text-base">Maria Eduarda Cordeiro Haenisch 0022 3°D</p>
         </footer>
     </div>
 </body>
