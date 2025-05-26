@@ -8,6 +8,19 @@ body {
     color: #333; /* Cor de texto padrão */
     background-color: #f8f8f8; /* Fundo levemente cinza */
 }
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.banner-principal img {
+  width: 100%;
+  display: block;
+}
 
 /* Container principal para centralizar o conteúdo */
 .container {
@@ -17,7 +30,7 @@ body {
 }
 
 /* Estilos para o cabeçalho */
-header {
+#banner-texto {
     background-color: #4CAF50; /* Verde vibrante */
     color: white;
     padding: 30px;
