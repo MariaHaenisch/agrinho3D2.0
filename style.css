@@ -17,11 +17,10 @@ header {
   align-items: center;
   flex-wrap: wrap;
 }
-.banner-principal img {
-    display: block;
-}
+
 .imagem-banner{
-    width: 50%;
+    width: 19%;
+    display: inline-grid
 }
 
 
