@@ -17,6 +17,9 @@ header {
   align-items: center;
   flex-wrap: wrap;
 }
+.logo-imagem{
+    width: 19%;
+}
 
 .imagem-banner{
     width: 19%;
@@ -50,6 +53,9 @@ header h1 {
 header h2 {
     font-size: 2em; /* Tamanho para o subtítulo */
     font-weight: 400;
+}
+.imagem-banner2{
+    width: 20%;
 }
 
 /* Estilos para as seções de conteúdo */
